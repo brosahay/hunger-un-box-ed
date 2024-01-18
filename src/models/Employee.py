@@ -37,7 +37,3 @@ class Employee(Interfaces.ResponseInterface):
     subscription_status: str
     last_notification_read: int
     delete_response: int
-
-    def deserialize(self, json_str: str) -> object:
-      temp = Interfaces.ResponseInterface.deserialize
-      return temp.data
